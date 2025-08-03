@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Movie Website</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#upload">Upload</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <h1>Welcome to MovieMania</h1>
+      <p>Your source for awesome movies!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Top Movies This Week</h2>
+
+      <!-- Movie Thumbnails List -->
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/150" alt="Movie 1" />
+          <p>Movie Title 1</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150" alt="Movie 2" />
+          <p>Movie Title 2</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/150" alt="Movie 3" />
+          <p>Movie Title 3</p>
+        </li>
+      </ul>
+
+      <!-- Movie Upload Form -->
+      <h2 id="upload">Upload a New Movie</h2>
+      <form>
+        <label for="title">Movie Title:</label><br />
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Enter movie title"
+        /><br /><br />
+
+        <label for="poster">Poster Image URL:</label><br />
+        <input
+          type="url"
+          id="poster"
+          name="poster"
+          placeholder="https://..."
+        /><br /><br />
+
+        <label for="description">Description:</label><br />
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          cols="40"
+          placeholder="Describe the movie..."
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Upload Movie</button>
+      </form>
+    </main>
+  </body>
+</html>
